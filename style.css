@@ -1,0 +1,243 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+
+## Typography
+
+### Body Copy
+
+- Font size: 13px
+
+### Font
+
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 500, 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body{
+    margin:1rem;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+
+    
+}
+
+.columns{
+    display: flex;
+    
+}
+
+.col1{
+    flex: 3;
+    margin: 1rem;
+    /* border: 1px solid black; */
+    border-radius: 1rem;
+}
+
+.col2{
+    flex:1;
+    /* border: 1px solid black; */
+    border-radius: 1rem;
+}
+
+.rowss1{
+    margin: 0.6rem;
+    display: flex;
+}
+
+.rowss2{
+    margin: 0.6rem;
+    display: flex;
+}
+
+
+.row1{
+    display: flex;
+    flex-direction: row;
+}
+
+.row2{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+
+.desc{
+    padding: 0.6rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.titles{
+    line-height: 0.4rem;
+}
+
+.one{
+    background-color:hsl(263, 55%, 52%) ;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-position-y: 20px;
+    background-repeat: no-repeat;
+    background-position-x: 450px;
+    flex: 3;
+}
+
+.desc h2{
+    color: white;
+    font-weight: 200;
+}
+
+.desc h3{
+    color: white;
+    opacity: 50%;
+}
+
+
+.desc h1{
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.desc p{
+    color: white;
+    font-weight: 400;
+    opacity: 70%;
+    font-size: 1rem;
+}
+.two{
+    background-color:hsl(217, 19%, 35%) ;
+    flex: 1;
+
+}
+
+.three{
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+
+.four{
+    background-color: hsl(219, 29%, 14%)
+    
+}
+
+.five{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.img_and_name{
+    display: flex;
+    justify-content: space-around;
+    /* max-width: 15rem; */
+    width: 13rem;
+}
+
+.image{
+    border-radius: 50%;
+    border:wheat 2px solid;
+    height: 8vh;
+    margin-top: 0.4rem;
+}
+
+
+
+@media (max-width:1100px){
+.one{
+    background-position-x: right;
+    background-position-y:40px;
+}
+
+
+body{
+    margin:0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.columns{
+    display: grid;
+    
+}
+
+.col1{
+    /* flex: 3; */
+    margin: 0rem;
+    /* border: 1px solid black; */
+    border-radius: 1rem;
+    border: none;
+}
+
+.col2{
+    /* flex:1; */
+    /* border: 1px solid black; */
+    border-radius: 1rem;
+    border: none;
+}
+
+.rowss1{
+    /* margin: 0.6rem; */
+    display: grid;
+}
+
+.rowss2{
+    /* margin: 0.6rem; */
+    display: grid;
+}
+
+
+.row1{
+    display: grid;
+    /* flex-direction: row; */
+}
+
+.row2{
+    display: grid;
+    /* flex-direction: row; */
+
+}
+
+
+
+.desc{
+    padding: 0.5rem;
+    margin: 0rem;
+    border-radius: 1rem;
+    margin: 0.8rem;
+    box-shadow: 5px 15px 2px #d1cccc;
+}
+
+
+}
